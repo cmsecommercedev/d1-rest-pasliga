@@ -16,9 +16,9 @@
     ],
     "secrets_store_secrets": [
         {
-            "store_id": "<YOUR-STORE-ID>",
+            "store_id": "90d6ae83ee614f23b6ae1185d93907f0",
             "binding": "SECRET",
-            "secret_name": "<YOUR-SECRET-NAME>"
+            "secret_name": "secret-d1-pasliga-test"
         }
     ],
 	"observability": {
