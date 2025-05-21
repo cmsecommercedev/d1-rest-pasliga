@@ -1,0 +1,27 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "d1-rest-pasliga",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-03-03",
+    "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "d1-rest-d1-pasliga",
+          "database_id": "4ca1e11f-91d5-4244-a875-8f08640925b8"
+        }
+    ],
+    "secrets_store_secrets": [
+        {
+            "store_id": "<YOUR-STORE-ID>",
+            "binding": "SECRET",
+            "secret_name": "<YOUR-SECRET-NAME>"
+        }
+    ],
+	"observability": {
+		"enabled": true
+	}
+}
